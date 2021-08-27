@@ -1,0 +1,13 @@
+
+DirectoryIndex index.php
+
+RewriteEngine On
+
+
+RewriteRule ^news([^/]*)(/?)+$ index.php?c=news [L]
+RewriteRule ^news/([^/]*)/([^/]*)(/?)+$ index.php?c=news&id=$1 [L]
+RewriteRule ^reg([^/]*)(/?)+$ index.php?c=reg [L]
+RewriteRule ^auth([^/]*)(/?)+$ index.php?c=auth [L]
+RewriteRule ^repas([^/]*)(/?)+$ index.php?c=repas [L]
+RewriteRule ^profile([^/]*)(/?)+$ index.php?c=profile [L]
+RewriteRule ^(/?)+$ index.php [L]
